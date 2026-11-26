@@ -48,6 +48,10 @@ RW_DEFAULT double stall_exit_msec = 0;             // End a motion after the rob
 RW_DEFAULT double distance_reset_max_angle = 30;   // Skip distance resets when the beam hits the wall at a steeper angle (degrees)
 RW_DEFAULT double distance_reset_max_jump = 0;     // Skip distance resets that move the position more than this (inches, 0 = off)
 RW_DEFAULT double distance_reset_corner_margin = 0; // Skip distance resets that hit the wall this close to a corner (inches, 0 = off)
+RW_DEFAULT double front_sensor_offsetZ = 0;          // Distance sensor height above the floor (inches)
+RW_DEFAULT double left_sensor_offsetZ = 0;
+RW_DEFAULT double right_sensor_offsetZ = 0;
+RW_DEFAULT double back_sensor_offsetZ = 0;
 RW_DEFAULT int mcl_particles = 200;                // MCL particle count (more = smoother but slower, up to 1000)
 RW_DEFAULT double mcl_max_range = 60;              // MCL ignores distance readings longer than this (inches)
 RW_DEFAULT double distance_sensor_delay_msec = 40; // How far behind the distance sensor readings are (msec)
